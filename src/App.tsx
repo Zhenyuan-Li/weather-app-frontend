@@ -1,11 +1,9 @@
 import React from 'react';
 
+import Weather from './containers/Weather';
+
 const App: React.FC = () => {
-  return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
-  );
+  return <Weather />;
 };
 
 export default App;
