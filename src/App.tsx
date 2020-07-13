@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 import Weather from './containers/Weather';
 
-const App: React.FC = () => {
+const App: FC = () => {
   return <Weather />;
 };
 

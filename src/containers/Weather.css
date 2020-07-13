@@ -1,0 +1,16 @@
+.weather-channel__container {
+  background: #323544;
+  height: 100vh;
+  position: relative;
+}
+
+@media only screen and (min-width: 800px) {
+  .weather-channel__container {
+    max-width: 800px;
+    margin: 3rem auto 0 auto;
+    border: 1px solid #666;
+    border-radius: 10px;
+    height: auto;
+    box-shadow: 5px 5px 10px #999;
+  }
+}
