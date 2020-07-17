@@ -7,9 +7,9 @@ import { Provider } from 'react-redux';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import reducers from './store/reducers/index';
+import rootReducer from './store/reducers/index';
 
-const store = createStore(reducers, applyMiddleware(thunkMiddleware));
+const store = createStore(rootReducer, applyMiddleware(thunkMiddleware));
 
 ReactDOM.render(
   <Provider store={store}>

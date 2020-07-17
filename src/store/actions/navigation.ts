@@ -34,5 +34,5 @@ export const fetchWeather = (
       const weatherData = data.data;
       dispatch(fetchWeatherSuccess({ weatherData }));
     })
-    .catch((error) => dispatch(fetchWeatherFailure(error)));
+    .catch((error) => dispatch(fetchWeatherFailure({ error })));
 };
