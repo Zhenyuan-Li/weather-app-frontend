@@ -6,6 +6,7 @@ import compass from '../../assets/icons/icon-compass.png';
 import umbrella from '../../assets/icons/icon-umbrella.png';
 import wind from '../../assets/icons/icon-wind.png';
 import Loader from '../UI/Loader/Loader';
+import toFahrenheit from '../../utils/transferWeather';
 
 const WeatherCondition: FC = () => {
   const unit = useSelector((state: RootStateOrAny) => state.navigation.unit);
@@ -21,7 +22,7 @@ const WeatherCondition: FC = () => {
     <section className="weather-condition">
       <div className="weather-condition__location">{cityName}</div>
       <div className="weather-condition__temp">
-        {current.temp} {unit}
+        {unit === 'c' ? current.temp : toFahrenheit(+current.temp)} {unit}
       </div>
       <div className="weather-condition__desc">
         <div>

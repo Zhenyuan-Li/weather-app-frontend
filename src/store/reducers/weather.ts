@@ -24,7 +24,7 @@ const initialState: weatherState = {
   error: null,
   forecast: new Array<FutureWeather>(),
   isLoading: false,
-  limit: 5,
+  limit: 4,
 };
 
 const weather = (

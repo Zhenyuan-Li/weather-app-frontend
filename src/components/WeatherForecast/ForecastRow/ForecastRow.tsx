@@ -2,15 +2,33 @@ import React, { FC } from 'react';
 
 import './ForecastRow.css';
 
-const ForecastRow: FC = () => (
+interface WeatherForecastProps {
+  high: number;
+  low: number;
+  time: string;
+  unit: string;
+  day: string;
+}
+
+const ForecastRow: FC<WeatherForecastProps> = ({
+  time,
+  high,
+  unit,
+  low,
+  day,
+}) => (
   <div className="weather-forecast__row">
-    <span className="weather-forecast__day">Mon</span>
+    <span className="weather-forecast__day">{day}</span>
     <span className="weather-forecast__icon">
       <i className="fa fa-clock-o" />
-      11:00
+      {time}
     </span>
-    <span className="weather-forecast__high">0 C</span>
-    <span className="weather-forecast__low">10 C</span>
+    <span className="weather-forecast__high">
+      {high} {unit}
+    </span>
+    <span className="weather-forecast__low">
+      {low} {unit}
+    </span>
   </div>
 );
 
