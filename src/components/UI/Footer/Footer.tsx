@@ -4,7 +4,7 @@ import './Footer.css';
 
 const Footer: FC = () => (
   <footer className="weather-channel__footer">
-    <p>Powered by React & TypeScript</p>
+    <p>Powered by React, Redux & TypeScript</p>
   </footer>
 );
 
