@@ -15,6 +15,8 @@ test('renders learn react link', () => {
       <App />
     </Provider>
   );
-  const linkElement = getByText('Powered by React & TypeScript');
+  const linkElement = getByText('Powered by React, Redux & TypeScript');
   expect(linkElement).toBeInTheDocument();
 });
+
+
